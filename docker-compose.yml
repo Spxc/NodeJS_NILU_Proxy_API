@@ -1,0 +1,14 @@
+version: '2'
+services:
+  properly-task:
+    container_name: properly-task
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+      - '8080:8080'
+    links:
+      - mongo
+  mongo:
+    container_name: properly-mongo
+    image: 'mongo:4.4'
