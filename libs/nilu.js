@@ -16,7 +16,7 @@ const { proxyStore } = require("./db")
 /**
  * Set base API URL
  */
-const baseUrl = 'https://api.nilu.no/'
+const baseUrl = 'https://api.nilu.no'
 
 /**
  * Fetch data from all available areas
